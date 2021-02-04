@@ -1,3 +1,5 @@
+/// HOME
+
 const HOME = "/";
 const JOIN = "/join";
 const LOGIN = "/login";
@@ -21,15 +23,18 @@ const DELETE_VIDEO = "/:id/delete";
 
 
 const routes ={
+
     home: HOME,
     join: JOIN,
     login: LOGIN,
     logout: LOGOUT,
     search: SEARCH,
+
     users: USERS,
     userDetail: USER_DETAIL,
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
+    
     videos: VIDEOS,
     upload: UPLOAD,
     videoDetil: VIDEOS_DETAIL,
