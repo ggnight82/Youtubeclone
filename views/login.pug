@@ -1,3 +1,9 @@
+extends layout/main
 
-
-p login
+block content
+    .form__container
+        form(action="/login", method="post")
+            input(type="email", name="email", placeholder="E-mail")
+            input(type="password", name="password", placeholder="E-mail")
+            input(type="submit", value="Log In")
+        include partial/socialLogin

@@ -4,7 +4,8 @@ export const videoSearch = (req, res) => {
     const {
         query: {term: searchingBy}
     } = req;
-    res.render("search",{pageTitle: "Search", searchingBy: searchingBy})
+    // const searchingBy = req.query.term
+    res.render("search",{pageTitle: "Search", searchingBy/*: searchingBy*/})
 };
 
 export const videos = (req, res) => res.render("videos",{pageTitle: "Videos"});
