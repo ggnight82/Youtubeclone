@@ -7,7 +7,8 @@
 ## Pages:
 
 - [ ] Home
-- [ ] Join
+- [x] Join
+- [x] Login
 - [x] Search
 - [ ] User Detail
 - [ ] Edit profile
