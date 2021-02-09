@@ -1,5 +1,9 @@
+import {sampleVideos} from "../db"
 
-export const videoHome = (req, res) => res.render("home",{pageTitle: "Home"});
+
+export const videoHome = (req, res) => {
+    res.render("home",{pageTitle: "Home", sampleVideos})
+};
 export const videoSearch = (req, res) => {
     const {
         query: {term: searchingBy}
