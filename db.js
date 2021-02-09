@@ -11,7 +11,7 @@ export const sampleVideos =[
             email: "hba@naver.com"
         }
     },
-    /*{
+    {
         id:45646,
         title: 'Video random 2',
         description: 'Random 2',
@@ -46,6 +46,6 @@ export const sampleVideos =[
             name: "HongJungWoo",
             email: "hba@naver.com"
         }
-    },*/
+    },
    
 ]
