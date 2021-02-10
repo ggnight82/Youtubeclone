@@ -1,51 +1,28 @@
-export const sampleVideos =[
-    {
-        id:324393,
-        title: 'Video random 1',
-        description: 'Random 1',
-        views: 24,
-        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
-            id : 121212,
-            name: "HongJungWoo",
-            email: "hba@naver.com"
-        }
-    },
-    {
-        id:45646,
-        title: 'Video random 2',
-        description: 'Random 2',
-        views: 24,
-        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
-            id : 121212,
-            name: "HongJungWoo",
-            email: "hba@naver.com"
-        }
-    },
-    {
-        id:3243934,
-        title: 'Video random 3',
-        description: 'Random 3',
-        views: 24,
-        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
-            id : 121212,
-            name: "HongJungWoo",
-            email: "hba@naver.com"
-        }
-    },
-    {
-        id:3243931111,
-        title: 'Video random 4',
-        description: 'Random 4',
-        views: 24,
-        videoFile: "https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4",
-        creator: {
-            id : 121212,
-            name: "HongJungWoo",
-            email: "hba@naver.com"
-        }
-    },
-   
-]
+ /* 
+    TODO 
+    1. Database 관련작업
+    2. 영상 업로드 시청 feature 작업
+    3. Front-end
+
+ */
+
+ import mongoose from "mongoose"
+ 
+
+ mongoose.connect(
+    "mongodb://localhost:27017/wetube", 
+    {   
+        useUnifiedTopology: true,
+        useNewUrlParser: true,
+        useFindAndModify: false,
+    }
+);
+
+const db = mongoose.connection;
+
+const handleOpen = () => console.log("✅ Connected to DB");
+const handleError = (error) => console.log(`Error on DB Connection: ${error}`);
+
+
+db.once("open",handleOpen);
+db.on("error", handleError); 

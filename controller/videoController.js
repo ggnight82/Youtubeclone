@@ -1,4 +1,3 @@
-import {sampleVideos} from "../db"
 import routes from "../routes"
 
 
