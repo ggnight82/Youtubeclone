@@ -4,23 +4,22 @@ export const userGetJoin = (req, res) => {
     res.render("join",{pageTitle: "Join"})
 };
 export const userPostJoin = (req, res) => {
-    console.log(req.body);
+    
     const {
         body: {name, email, password, password2}
     } = req;
+    
     if(password !== password2){
         res.status(400);
         res.render("join", {pageTitle : "Join"});
     } else{
         // TODO : Register User
         // TODO : Log user in
-
         res.redirect(routes.home)
     }
     res.render("join",{pageTitle: "Join"})
     
 }
-
 
 
 export const userGetLogin = (req, res) => res.render("login",{pageTitle: "Log in"});

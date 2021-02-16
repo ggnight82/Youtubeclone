@@ -10,6 +10,10 @@
 */
 
 import routes from "./routes";
+import multer from "multer";
+
+
+const uploadVideo = multer({dest: "videos/"})
 
 export const localsMiddleware = (req, res, next) => {
 
@@ -21,3 +25,5 @@ export const localsMiddleware = (req, res, next) => {
     } 
     next();
 };
+
+export const uploadVideoMiddleware = uploadVideo.single('');
