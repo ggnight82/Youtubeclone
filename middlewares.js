@@ -13,7 +13,7 @@ import routes from "./routes";
 import multer from "multer";
 
 
-const uploadVideo = multer({dest: "videos/"})
+const multerVideo = multer({dest: "videos/"});
 
 export const localsMiddleware = (req, res, next) => {
 
@@ -26,4 +26,4 @@ export const localsMiddleware = (req, res, next) => {
     next();
 };
 
-export const uploadVideoMiddleware = uploadVideo.single('');
+export const uploadVideo = multerVideo.single('videoFile'); //원하는 파일이 들어간 HTML field의 name 부분을 single()안에 넣어줌
