@@ -4,8 +4,10 @@ html
         meta(http-equiv="Content-Security-Policy" content="default-src *") 
         link(rel="stylesheet", href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css", integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p",  crossorigin="anonymous")
         title #{pageTitle} | #{siteName}
+        link(rel="stylesheet",href="/static/styles.css")
     body
         include ../partial/header
         main
             block content
         include ../partial/footer
+        script(src="/static/main.js")

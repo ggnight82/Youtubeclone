@@ -4,7 +4,7 @@ import {
     changePassword, 
     editProfile, 
     userDetail, 
-    users } 
+} 
     from "../controller/userController";
 
 import routes from "../routes";

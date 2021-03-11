@@ -1,12 +1,10 @@
-import routes from "../routes";
+import routes from '../routes';
 
-export const userGetJoin = (req, res) => {
-    res.render("join",{pageTitle: "Join"})
-};
+export const userGetJoin = (req, res) => { res.render('join', { pageTitle: 'Join' })};
 export const userPostJoin = (req, res) => {
     
     const {
-        body: {name, email, password, password2}
+        body: {password, password2}
     } = req;
     
     if(password !== password2){
