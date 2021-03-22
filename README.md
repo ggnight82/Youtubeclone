@@ -1,19 +1,17 @@
 
-# WeTube
-
-## NodeJs를 이용해서 YOUTUBE 만들기
+# NodeJs를 이용해서 YOUTUBE 만들기
 
 
 ## Pages:
 
-- [ ] Home
+- [x] Home
 - [x] Join
 - [x] Login
 - [x] Search
-- [ ] User Detail
-- [ ] Edit profile
-- [ ] Change Password
-- [ ] Upload
-- [ ] Video Detail
-- [ ] Edit Video
-- [ ] Home
+- [x] User Detail
+- [x] Edit profile
+- [x] Change Password
+- [x] Upload
+- [x] Video Detail
+- [x] Edit Video
+- [x] Home
